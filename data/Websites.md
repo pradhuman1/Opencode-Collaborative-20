@@ -7,4 +7,6 @@
 7. [Arpit Agarwal](https://aarpit1010.github.io/website/website/myself.html)
 8. [Ananya Mohanty](https://ananya-mohanty.github.io/Selfpage/)
 9. [Cheena Budhiraja](https://griffy06.github.io/mySite/index.html)
-10. [Pradhuman Singh Baid](https://pradhuman1.github.io/My-Website/Mypage.html)
+
+10. [Sarthak Maheshwari](https://sarthakm21.github.io/My-Website/)
+
