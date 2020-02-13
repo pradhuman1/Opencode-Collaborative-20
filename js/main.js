@@ -1,7 +1,17 @@
 (function ($) {
   "use strict";
 
- 
+   //Timer
+  var destination=new Date('Feb 16,2020 00:00:00').getTime();
+  var x=setInterval(function(){
+    var startPt=new Date().getTime();
+    var journey=destination-startPt;
+    document.getElementById('days').textContent = Math.floor(journey / (1000 * 60 * 60 * 24));
+    document.getElementById('hours').textContent = Math.floor((journey % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    document.getElementById('minutes').textContent = Math.floor((journey % (1000 * 60 * 60)) / (1000 * 60));
+    document.getElementById('seconds').textContent= Math.floor((journey % (1000 * 60)) / 1000);
+    // document.querySelector('.test').textContent=days+'  '+hours+'  '+minutes+'  '+seconds;
+  },1000);
 
 
   // Header scroll class
