@@ -83,7 +83,7 @@ $(document).ready(function() {
         
 
      var tab = "<div class=\"col-lg-3 col-sm-6 tiles \"><div class=\"card \" style=\" width: 10rem;\">" + "<img class=\"card-img-top\" src = \" "+f.imageurl+" \" onerror=\"this.src=\'img/prof.png\';\" alt=\"Card image cap\" \"max-width = \"100px\" height = \"100px\"></span> "+"<div class=\"card-body \" height=\"50px\"><span class=\"card-title\">"+ f.name+"</span> "+"<p class=\"card-text\"> <ul class=\"list-group list-group-flush\">"+ "<li class=\"list-group-item\ height=\"50px\"> <u><b>COLLEGE</b></u><br> " + f.college+ "</li>" +"</ul>"+
-        "<span class=\"proj_name\">"+ "<a onclick=\"window.location.href =\'"+  f.github+"\' ;\" style=\"margin-top: 0.1px; margin-right:15px; \" <i class = \"fa fa-2x fa-github-square pointer\"> </a>" + "<a onclick=\"window.location.href =\'"+  f.facebook+"\' ;\" style=\"margin-top: 0.1px; margin-right:15px; \" <i class = \"fa fa-2x fa-facebook-square pointer\"> </a> </div> </div>"
+        "<span class=\"proj_name\">"+ "<a onclick=\"window.location.href =\'"+  f.github+"\' ;\" style=\"margin-top: 0.1px; margin-right:15px; \" <i class = \"fa fa-2x fa-github-square pointer\"> </a>" + "<a onclick=\"window.location.href =\'"+  f.facebook+"\' ;\" style=\"margin-top: 0.1px;  \" <i class = \"fa fa-2x fa-facebook-square pointer\"> </a> </div> </div>"
         // console.log(tblRow)
       // var tab='<tr><td>'+partDetails[i].name+"\n"+'</td><td><img src="'+partDetails[i].imageurl+"\n"+'" alt="" border=3 height=100 width=300></img></td><td>'+partDetails[i].about+"\n"+'</td><td>'+partDetails[i].college+"\n"+'</td><td>'
       //           +partDetails[i].facebook+"\n"+'</td><td>'+partDetails[i].github+"\n"+'</td><td>'+partDetails[i].twitter+"\n"+'</td><td>'
