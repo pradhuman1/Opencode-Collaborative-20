@@ -89,11 +89,12 @@ $(document).ready(function() {
       //           +partDetails[i].facebook+"\n"+'</td><td>'+partDetails[i].github+"\n"+'</td><td>'+partDetails[i].twitter+"\n"+'</td><td>'
       //           +partDetails[i].referral+"\n"+'</td><td>'+partDetails[i].Gender+"\n"+'</td></tr>';
                //<span class=\"proj_name\">"+ "<div class = \"displa\"><button class = \"lin\" onclick=\"window.location.href =\'"+  f.github+"\' ;\" style=\"margin-top: 0.1px;\"><span>"+ "Github"+ "</span></button> </div> <button class = \"lin\" onclick=\"window.location.href =\' "+  f.facebook+"\' ;\" style=\"margin-top: 0.1px;\"><span>"+ "Facebook"+ "</span></button> </div> </div>";
+
        $('#myTable').append(tab)
 
       }
     }
-    $('#nextValue').click(function(){debugger
+    $('#nextValue').click(function(){
       var next = limit;
       if(max_size>=next) {
       limit = limit+elements_per_page;
@@ -122,7 +123,14 @@ $(document).ready(function() {
             pagination(start*8,limit); 
        });
 
-
+      // mentors
+      var size=mentorDetails.length;
+      for(var i=0;i<size;i++){
+        var f = mentorDetails[i];
+        var tabm = "<div class=\"col-lg-3 col-sm-6 tiles \"><div class=\"card mentCard\" >" + "<img class=\"card-img-top\" src = \" "+f.imageurl+" \" onerror=\"this.src=\'img/prof.png\';\" alt=\"Card image cap\"></span> "+"<div class=\"card-body \" height=\"50px\"><span class=\"card-title\">"+ f.name+"</span> "+"<ul class=\"list-group list-group-flush\">"+ "<li class=\"list-group-item\ height=\"50px\"> About: " + f.about+ "</li>" +"</ul>"+
+            "<span class=\"proj_name\">"+ "<button class = \"lin\" onclick=\"window.location.href =\'"+  f.github+"\' ;\" ><span>"+ "Github"+ "</span></button> <button class = \"lin\" onclick=\"window.location.href =\' "+  f.facebook+"\' ;\" ><span>"+ "Facebook"+ "</span></button> </div> </div>"
+        $('#myMentorTable').append(tabm)
+      }
 });
 
 
